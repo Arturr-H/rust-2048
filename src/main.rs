@@ -260,7 +260,7 @@ impl Game {
         match self.board.get_mut(coord) {
             Some(e) => {
                 /*- If this is true, we'll spawn a 4 instead of a 2 -*/
-                let spawn_4:bool = random.gen_bool(0.8);
+                let spawn_4:bool = random.gen_bool(0.2);
                 if spawn_4 { *e = 4 }
                 else       { *e = 2 }
             },
